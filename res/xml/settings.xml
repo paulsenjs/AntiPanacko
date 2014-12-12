@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Developer" >
+        <Preference
+            android:key="prefDeleteAdmin"
+            android:summary="Delete admin mode"
+            android:title="Delete Admin" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Recorder" >
+        <CheckBoxPreference
+            android:key="prefCheckIfUsingSound"
+            android:summary="Use sound recorded"
+            android:title="Sound" />
+
+        <Preference
+            android:key="prefRecordSound"
+            android:summary="Record new sound"
+            android:title="Sound Recorder"
+            android:enabled="false" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.example.antipanacko.recorder.PanackoAudioRecorder"
+                android:targetPackage="com.example.antitheft" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

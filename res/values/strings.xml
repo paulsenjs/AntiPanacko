@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AntiPanacko</string>
+    <string name="clear_admin">Clear</string>
+    <string name="hello_world">Hello Panacko!</string>
+	<string name="record_sound">Record/Play Sound!</string>
+	
+</resources>
